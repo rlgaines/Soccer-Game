@@ -14,6 +14,9 @@ var oldBallX = 400;
 var oldBallY = 400;
 var ballSpeedX = 5;
 var ballSpeedY = 4;
+var goal1 = 1;
+var goal2 = 1;
+
 var player1 = {
 	img: document.getElementById("player1"),
 	x:500,
@@ -208,10 +211,12 @@ function moveEverythig(){
 		}
 
 		else if((ballX > 758)&&(ballY > 191 && ballY < 311)){
+			$('#goal1').html("P1: "+goal1++)
 			ballReset();
 		}
 
 		else if ((ballX <39) && (ballY > 191 & ballY < 311)){
+			$('#goal2').html("P2: "+goal2++)
 			ballReset();
 		}
 
