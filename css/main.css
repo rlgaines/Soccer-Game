@@ -1,0 +1,26 @@
+body{
+	background-color: black;
+}
+#gameCanvas{
+	position: absolute;
+	margin-left: 200px;
+	z-index: 2;
+}
+#field {
+	position: absolute;
+	left: 200px;
+	z-index: 1;
+}
+
+
+
+.box{
+	font-size: 50px;
+	color:white;
+}
+
+#goal{
+	font-size: 50px;
+	color:white;
+	left: 150px;
+}
